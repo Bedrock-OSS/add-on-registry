@@ -230,4 +230,28 @@ export const Registry = {
         name: "jeanmajid",
         creator: "jeanmajid",
     },
+    oreville_15yr: {
+        name: "15 Year Party Supplies",
+        creator: "Oreville Studios"
+    },
+    oreville_vm: {
+        name: "Vibrant Memories Add-On",
+        creator: "Oreville Studios"
+    },
+    oreville_rb: {
+        name: "Realistic Biomes Add-On",
+        creator: "Oreville Studios"
+    },
+    oreville_tc: {
+        name: "Time Capsule Add-On",
+        creator: "Oreville Studios"
+    },
+    oreville_wb: {
+        name: "World Builder Add-On",
+        creator: "Oreville Studios"
+    },
+    oreville_hp: {
+        name: "Health Bars Add-On",
+        creator: "Oreville Studios"
+    },
 };
