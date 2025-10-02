@@ -1,0 +1,26 @@
+{
+    "sqst_bkpk": {
+        "name": "Backpacks",
+        "creator": "Scai Quest"
+    },
+    "sqst_ihfs": {
+        "name": "AutoFisher",
+        "creator": "Scai Quest"
+    },
+    "sqst_oreb": {
+        "name": "Ore Beetles",
+        "creator": "Scai Quest"
+    },
+    "sqst_plsh": {
+        "name": "Plushies",
+        "creator": "Scai Quest"
+    },
+    "sqst_xpcb": {
+        "name": "XP Crystal Bank",
+        "creator": "Scai Quest"
+    },
+    "sqst_mtls": {
+        "name": "Multitool",
+        "creator": "Scai Quest"
+    }
+}
