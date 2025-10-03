@@ -1,0 +1,18 @@
+{
+    "wonder_tech": {
+        "name": "Advanced Machines Add-On",
+        "creator": "Wonder"
+    },
+    "wonder_aps": {
+        "name": "Advanced Power Suits Add-On",
+        "creator": "Wonder"
+    },
+    "wonder_cons": {
+        "name": "Construction Add-On",
+        "creator": "Wonder"
+    },
+    "wonder_ores": {
+        "name": "More Ores Tools Armor Add-On",
+        "creator": "Wonder"
+    }
+}
