@@ -1,0 +1,14 @@
+{
+    "cc_fairytales": {
+        "name": "Fairy Tales",
+        "creator": "Chillcraft Studios"
+    },
+    "cc_abyss": {
+        "name": "Abyssal Echoes",
+        "creator": "Chillcraft Studios"
+    },
+    "cc_mechs": {
+        "name": "Mech Expansion",
+        "creator": "Chillcraft Studios"
+    }
+}
