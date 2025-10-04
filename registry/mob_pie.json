@@ -1,0 +1,18 @@
+{
+    "mobpie_furn": {
+        "name": "Furniture Add-On",
+        "creator": "Mob Pie"
+    },
+    "mobpie_animal": {
+        "name": "Animals Add-On",
+        "creator": "Mob Pie"
+    },
+    "mobpie_cars": {
+        "name": "Luxury Cars Add-On",
+        "creator": "Mob Pie"
+    },
+    "mobpie_doors": {
+        "name": "Secret Doors Add-On",
+        "creator": "Mob Pie"
+    }
+}
