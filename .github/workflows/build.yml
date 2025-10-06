@@ -34,8 +34,20 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          npm version patch -m "release: %s"
-          npm publish
+
+          LATEST=$(npm view @bedrock-oss/add-on-registry version || echo "1.0.0")
+          LOCAL=$(node -p "require('./package.json').version")
+
+          if [ "$LATEST" = "$LOCAL" ]; then
+            echo "Version already published, bumping patch..."
+            npm version patch --no-git-tag-version
+          fi
+
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          npm publish --access public
+
+          git add package.json package-lock.json
+          git commit -m "release: $NEW_VERSION" || echo "No changes to commit"
           git push origin HEAD:main --follow-tags
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
