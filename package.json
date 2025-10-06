@@ -19,7 +19,8 @@
     },
     "homepage": "https://github.com/Bedrock-OSS/add-on-registry#readme",
     "scripts": {
-        "build": "node scripts/build-registry.js",
+        "validate": "node scripts/validate-registry.js",
+        "build": "npm run validate && node scripts/build-registry.js",
         "prepublishOnly": "npm run build"
     },
     "files": [

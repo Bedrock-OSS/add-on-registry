@@ -1,5 +1,17 @@
 {
-    "cSpell.words": [
-        "WAILA"
-    ]
+    "editor.comments.insertSpace": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "files.autoSave": "afterDelay",
+    "prettier.trailingComma": "es5",
+    "prettier.bracketSpacing": true,
+    "prettier.semi": true,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
