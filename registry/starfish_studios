@@ -1,0 +1,34 @@
+{
+    "sf_gaa": {
+        "name": "McDonald's Add-On",
+        "creator": "Starfish Studios"
+    },
+    "sf_cma": {
+        "name": "CRAFTYMON",
+        "creator": "Starfish Studios"
+    },
+    "sf_hba": {
+        "name": "Hamsters+",
+        "creator": "Starfish Studios"
+    },
+    "sf_scp": {
+        "name": "Can You Survive?",
+        "creator": "Starfish Studios"
+    },
+    "sf_hei": {
+        "name": "Moana 2",
+        "creator": "Starfish Studios"
+    },
+    "sf_afm": {
+        "name": "Another Furniture",
+        "creator": "Starfish Studios"
+    },
+    "sf_nba": {
+        "name": "Naturalist",
+        "creator": "Starfish Studios"
+    },
+    "sf.baby_dragons": {
+        "name": "DRAGON PETS",
+        "creator": "Starfish Studios"
+    }
+}
