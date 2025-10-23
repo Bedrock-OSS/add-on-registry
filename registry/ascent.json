@@ -1,6 +1,10 @@
 {
     "ascent_paint": {
-        "name": "Paint",
+        "name": "Paint Add-On",
         "creator": "ASCENT"
+    },
+    "ascent_htcg": {
+        "name": "Hermitcraft TCG Add-On",
+        "creator": "Hermitcraft x ASCENT"
     }
 }
