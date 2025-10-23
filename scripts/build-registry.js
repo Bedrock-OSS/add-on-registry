@@ -48,7 +48,7 @@ function formatValues(value, indent = 1) {
 function createRegister(object, indent = 0) {
     const padding = "    ".repeat(indent);
     const entries = Object.entries(object)
-        .map(([namespace, entry]) => `${padding}    ${namespace}: ${formatValues(entry, indent + 1)},`)
+        .map(([namespace, entry]) => `${padding}    "${namespace}": ${formatValues(entry, indent + 1)},`)
         .join("\n");
     return `{\n${entries}\n${padding}}`;
 }
