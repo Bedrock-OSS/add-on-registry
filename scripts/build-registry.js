@@ -8,9 +8,11 @@ let merged = {};
 let seenKeys = new Set();
 let hasDuplicate = false;
 
+// Grab all files
+const allFiles = fs.readdirSync(registryDir);
+
 // Collect all JSON files
-for (const file of fs.readdirSync(registryDir)) {
-    if (!file.endsWith(".json")) continue;
+for (const file of allFiles) {
     const filePath = path.join(registryDir, file);
     const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
@@ -29,21 +31,25 @@ for (const file of fs.readdirSync(registryDir)) {
 // Format objects
 function formatValues(value, indent = 1) {
     const padding = "    ".repeat(indent);
-    // Just wrap strings into quotes dont really care
+    // Just wrap strings into quotes don't really care
     if (typeof value === "string") {
         return `"${value}"`;
     }
     if (typeof value === "object" && value !== null) {
-        const entries = Object.entries(value).map(([propName, propValue]) => `${padding}    ${propName}: ${formatValues(propValue, indent + 1)},`).join("\n");
+        const entries = Object.entries(value)
+            .map(([propName, propValue]) => `${padding}    ${propName}: ${formatValues(propValue, indent + 1)},`)
+            .join("\n");
         return `{\n${entries}\n${padding}}`;
     }
-    return (value);
+    return value;
 }
 
 // Build final registry
 function createRegister(object, indent = 0) {
     const padding = "    ".repeat(indent);
-    const entries = Object.entries(object).map(([namespace, entry]) => `${padding}    ${namespace}: ${formatValues(entry, indent + 1)},`).join("\n");
+    const entries = Object.entries(object)
+        .map(([namespace, entry]) => `${padding}    "${namespace}": ${formatValues(entry, indent + 1)},`)
+        .join("\n");
     return `{\n${entries}\n${padding}}`;
 }
 
