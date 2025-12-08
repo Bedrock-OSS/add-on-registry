@@ -1,0 +1,26 @@
+{
+    "kubo_mg": {
+        "name": "MORPH Add-On",
+        "creator": "Kubo Studios"
+    },
+    "kubo_ss": {
+        "name": "SECURITY SYSTEMS Add-On",
+        "creator": "Kubo Studios"
+    },
+    "kubo_mv": {
+        "name": "VILLAGERS++ Add-On",
+        "creator": "Kubo Studios"
+    },
+    "kubo_aj": {
+        "name": "ANIME JUTSU Add-On",
+        "creator": "Kubo Studios"
+    },
+    "kubo_rpg": {
+        "name": "RPG Add-On",
+        "creator": "Kubo Studios"
+    },
+    "kubo_fs": {
+        "name": "FISHING++ Add-On",
+        "creator": "Kubo Studios"
+    }
+}
