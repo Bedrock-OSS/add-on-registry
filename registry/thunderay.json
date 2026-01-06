@@ -1,10 +1,14 @@
 {
     "snst_bckp": {
-        "name": "Backpacks++",
+        "name": "Backpacks++ Add-On",
         "creator": "ThunderAy"
     },
     "snst_morph": {
-        "name": "BE a MOB",
+        "name": "BE a MOB Add-On",
+        "creator": "ThunderAy"
+    },
+    "senior_bv": {
+        "name": "Vanilla Biomes+ Add-On",
         "creator": "ThunderAy"
     }
 }
