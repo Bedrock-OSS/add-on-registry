@@ -1,6 +1,6 @@
 {
     "name": "@bedrock-oss/add-on-registry",
-    "version": "1.0.12",
+    "version": "1.0.13",
     "description": "A registry for Minecraft Bedrock Add-Ons and their basic meta-data. This is intended to be used by features such as WAILA-add-ons to display accurate information about packs.",
     "main": "registry.js",
     "type": "module",
