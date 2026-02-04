@@ -9,6 +9,9 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -49,5 +52,3 @@ jobs:
           git add package.json package-lock.json
           git commit -m "release: $NEW_VERSION" || echo "No changes to commit"
           git push origin HEAD:main --follow-tags
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
