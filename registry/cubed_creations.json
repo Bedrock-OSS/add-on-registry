@@ -1,0 +1,26 @@
+{
+    "pl_sk_pr": {
+        "name": "Player Skills Pro Add-On",
+        "creator": "Cubed Creations"
+    },
+    "cubc_mo_en": {
+        "name": "More Enchantments Add-On",
+        "creator": "Cubed Creations"
+    },
+    "cubc_ra_su": {
+        "name": "Raft Survival Add-On",
+        "creator": "Cubed Creations"
+    },
+    "cc_re": {
+        "name": "Realism Effects Add-On",
+        "creator": "Cubed Creations"
+    },
+    "cubc_we_fu": {
+        "name": "Weapons Fusion Add-On",
+        "creator": "Cubed Creations"
+    },
+    "cc_vd" : {
+        "name": "Villager Dweller Add-On",
+        "creator": "Cubed Creations"
+    }
+}
