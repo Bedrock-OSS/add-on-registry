@@ -2,5 +2,9 @@
     "bs_bwad": {
         "name": "Builders Wands",
         "creator": "Block Studios"
+    },
+    "bs_most": {
+        "name": "More Structures",
+        "creator": "Block Studios"
     }
 }
