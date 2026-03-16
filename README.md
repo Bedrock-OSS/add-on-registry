@@ -11,18 +11,18 @@ Your pull-request will automatically merge all JSON files together into one file
 
 ### Steps
 
-1. Create a new JSON file or edit one inside the `/registry` folder.  
-   - If you're a "new" creator, the filename should be your creator/studio name (e.g. `ascent.json`, `spark.json`).
+1. Create a new JSON file or edit one inside the `/registry` folder.
+    - If you're a "new" creator, the filename should be your creator/studio name (e.g. `ascent.json`, `spark.json`).
 2. Follow the structure used in the other files. Example:
 
-   ```json
+    ```json
     {
         "ascent_paint": {
             "name": "Paint",
             "creator": "ASCENT"
         }
     }
-   ```
+    ```
 
 3. Commit your JSON file, then open a pull request.
 
@@ -45,7 +45,7 @@ npm i @bedrock-oss/add-on-registry
 You can now use it in your project like this:
 
 ```javascript
-import { Registry } from "@bedrock-oss/add-on-registry"
+import { Registry } from "@bedrock-oss/add-on-registry";
 
 function getAddOnName(identifier) {
     const namespace = identifier.split(":")[0];
