@@ -1,0 +1,30 @@
+{
+    "hb_we": {
+        "name": "Weapons Evolve Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_hr": {
+        "name": "HorrorCraft Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_em": {
+        "name": "Enchantments Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_cb": {
+        "name": "Camping Backpack Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_ba": {
+        "name": "Laser Blasters Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_ae": {
+        "name": "Armor Evolve Add-On",
+        "creator": "HorizonBlocks"
+    },
+    "hb_ml": {
+        "name": "MOB LIGHTS Add-On",
+        "creator": "HorizonBlocks"
+    }
+}
