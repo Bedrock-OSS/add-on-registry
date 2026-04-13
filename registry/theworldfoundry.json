@@ -1,4 +1,12 @@
 {
+    "twf_cc": {
+        "name": "Chop Chop",
+        "creator": "The World Foundry"
+    },
+    "twf_looky": {
+        "name": "Looky Tool",
+        "creator": "The World Foundry"
+    },
     "twf_jb": {
         "name": "Chomp",
         "creator": "The World Foundry"
