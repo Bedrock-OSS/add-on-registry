@@ -2,5 +2,9 @@
     "stark_ep": {
         "name": "Enchantments Plus",
         "creator": "StarkTMA"
+    },
+    "stark_ge": {
+        "name": "Gravity Expansion",
+        "creator": "StarkTMA"
     }
 }
