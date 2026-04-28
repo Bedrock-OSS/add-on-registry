@@ -1,55 +1,66 @@
 name: Registry CI
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
+    pull_request:
+    push:
+        branches:
+            - main
 
 permissions:
-  contents: write
-  id-token: write
+    contents: write
+    id-token: write
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24.x'
-      - run: npm ci
-      - run: npm run build
+    validate:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: "24.x"
+            - run: npm ci
+            - run: npm run build
 
-  publish:
-    if: github.ref == 'refs/heads/main'
-    needs: validate
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24.x'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm ci
-      - run: npm run build
+    publish:
+        if: github.ref == 'refs/heads/main'
+        needs: validate
+        runs-on: ubuntu-latest
+        concurrency:
+            group: publish-npm
+            cancel-in-progress: false
+        steps:
+            - uses: actions/checkout@v5
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: "24.x"
+                  registry-url: "https://registry.npmjs.org"
+            - run: npm ci
+            - run: npm run build
 
-      - name: Publish new version
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            - name: Publish new version
+              run: |
+                  set -e
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          LATEST=$(npm view @bedrock-oss/add-on-registry version || echo "1.0.0")
-          LOCAL=$(node -p "require('./package.json').version")
+                  git pull --rebase origin main
 
-          if [ "$LATEST" = "$LOCAL" ]; then
-            echo "Version already published, bumping patch..."
-            npm version patch --no-git-tag-version
-          fi
+                  PKG="@bedrock-oss/add-on-registry"
 
-          NEW_VERSION=$(node -p "require('./package.json').version")
-          npm publish --access public
+                  while true; do
+                    CURRENT=$(node -p "require('./package.json').version")
+                    EXISTS=$(npm view "$PKG@$CURRENT" version 2>/dev/null || true)
+                    if [ -z "$EXISTS" ]; then
+                      break
+                    fi
+                    echo "Version $CURRENT already published, bumping patch..."
+                    npm version patch --no-git-tag-version
+                  done
 
-          git add package.json package-lock.json
-          git commit -m "release: $NEW_VERSION" || echo "No changes to commit"
-          git push origin HEAD:main --follow-tags
+                  NEW_VERSION=$(node -p "require('./package.json').version")
+                  echo "Publishing $PKG@$NEW_VERSION"
+                  npm publish --access public
+
+                  git add package.json package-lock.json
+                  git commit -m "release: $NEW_VERSION" || echo "No changes to commit"
+                  git push origin HEAD:main --follow-tags
