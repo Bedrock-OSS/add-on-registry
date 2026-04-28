@@ -24,7 +24,7 @@ Your pull-request will automatically merge all JSON files together into one file
     }
     ```
 
-3. Commit your JSON file, then open a pull request.
+3. Commit your JSON file, then open a pull request. One of the maintainers will review it and approve if possible.
 
 ### Notes
 
