@@ -38,5 +38,13 @@
     "spark_spongebob": {
         "name": "SpongeBob SquarePants",
         "creator": "Spark Universe"
+    },
+    "spark_moa": {
+        "name": "Aether Moa",
+        "creator": "Spark Universe"
+    },
+    "spark_aether": {
+        "name": "Aether Legends",
+        "creator": "Spark Universe"
     }
 }
