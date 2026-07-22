@@ -4,11 +4,15 @@
         "creator": "Legopitstop"
     },
     "lpsm_more_pumpkins": {
-        "name": "More Pumpkins",
+        "name": "More Pumpkins Add-On",
         "creator": "Legopitstop"
     },
     "lpsm_mb": {
-        "name": "More Blocks",
+        "name": "More Blocks Add-On",
+        "creator": "Legopitstop"
+    },
+    "lpsm_ubb": {
+        "name": "Ultimate Block Breaker Add-On",
         "creator": "Legopitstop"
     }
 }
