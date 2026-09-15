@@ -10,5 +10,13 @@
     "float_br": {
         "name": "The Backrooms Add-On",
         "creator": "Float Studios"
+    },
+    "float_vc": {
+        "name": "Village Cities",
+        "creator": "Float Studios"
+    },
+    "float_mb": {
+        "name": "Mini Blocks",
+        "creator": "Float Studios"
     }
 }
