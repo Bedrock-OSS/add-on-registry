@@ -10,5 +10,13 @@
     "senior_bv": {
         "name": "Vanilla Biomes+ Add-On",
         "creator": "ThunderAy"
+    },
+    "lpsm_minimap": {
+        "name": "Minimap Add-On",
+        "creator": "ThunderAy"
+    },
+    "thunderay_vill": {
+        "name": "More Villages Add-On",
+        "creator": "ThunderAy"
     }
 }
