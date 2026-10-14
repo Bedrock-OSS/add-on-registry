@@ -3,6 +3,10 @@
         "name": "Sonic Add-On",
         "creator": "Gamemode One"
     },
+    "gm1_sky": {
+        "name": "AI Players Add-On",
+        "creator": "Gamemode One"
+    },
     "gm1_zen": {
         "name": "How to Train Your Dragon",
         "creator": "Gamemode One"
