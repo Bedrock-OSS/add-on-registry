@@ -1,0 +1,34 @@
+{
+    "kicu_arex": {
+        "name": "Armor Expansion Add-On",
+        "creator": "King Cube"
+    },
+    "kicu_cuen": {
+        "name": "Enchantment Expansion Add-On",
+        "creator": "King Cube"
+    },
+    "kicu_cuul": {
+        "name": "Cube Utilities Add-On",
+        "creator": "King Cube"
+    },
+    "kicu_jp": {
+        "name": "Mob Jetpacks Add-On",
+        "creator": "King Cube"
+    },
+    "kicu_lubl": {
+        "name": "Lucky Block",
+        "creator": "King Cube"
+    },
+    "kicu_mfad": {
+        "name": "Mob Food",
+        "creator": "King Cube"
+    },
+    "kicu_mmad": {
+        "name": "Myth and Dragons Add-On 2.0",
+        "creator": "King Cube"
+    },
+    "kicu_spss": {
+        "name": "Spellswords Add-On",
+        "creator": "King Cube"
+    }
+}
