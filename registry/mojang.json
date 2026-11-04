@@ -1,0 +1,22 @@
+{
+    "minecraft": {
+        "name": "Minecraft",
+        "creator": "Mojang Studios"
+    },
+    "minecon": {
+        "name": "Minecon Samples",
+        "creator": "Mojang Studios"
+    },
+    "mcl": {
+        "name": "Minecraft Live Samples",
+        "creator": "Mojang Studios"
+    },
+    "editor": {
+        "name": "Minecraft Editor",
+        "creator": "Mojang Studios"
+    },
+    "mcedu": {
+        "name": "Minecraft Education",
+        "creator": "Mojang Studios"
+    }
+}
