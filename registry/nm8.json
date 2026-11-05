@@ -3,6 +3,10 @@
         "name": "April Showers",
         "creator": "eNeM8ting"
     },
+    "nm8_boon": {
+        "name": "Completionist's Boon",
+        "creator": "eNeM8ting"
+    },
     "nm8_consolidation": {
         "name": "Consolidation",
         "creator": "eNeM8ting"
@@ -12,11 +16,11 @@
         "creator": "eNeM8ting"
     },
     "nm8_mounts": {
-        "name": "A-mounting To Greatness",
+        "name": "Amounting To Greatness",
         "creator": "eNeM8ting"
     },
     "nm8_moyai": {
-        "name": "Revenge of the Moyai",
+        "name": "Moyai (Bedrock Edition)",
         "creator": "eNeM8ting"
     }
 }
